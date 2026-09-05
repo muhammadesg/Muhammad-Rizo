@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import Section, { SectionSeparator } from '@/components/motion/section';
 import { BlurReveal, MaskReveal, SectionHeading } from '@/components/motion/primitives';
 import { stats } from '@/lib/content';
+import { Myphoto } from '@/assets/images';
 
 const PORTRAIT =
   'https://images.pexels.com/photos/14189629/pexels-photo-14189629.jpeg?auto=compress&cs=tinysrgb&w=900';
@@ -75,7 +76,7 @@ export default function About() {
                 <div className="relative aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl border border-white/10">
                   <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${PORTRAIT})` }}
+                    style={{ backgroundImage: `url(${Myphoto})` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent" />
                   <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/40 to-transparent" />
