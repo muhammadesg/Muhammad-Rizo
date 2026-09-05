@@ -76,7 +76,7 @@ export default function About() {
                 <div className="relative aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl border border-white/10">
                   <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${Myphoto})` }}
+                    style={{ backgroundImage: `url(${Myphoto.src})` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent" />
                   <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/40 to-transparent" />
