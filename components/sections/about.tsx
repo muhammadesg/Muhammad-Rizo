@@ -7,9 +7,6 @@ import { BlurReveal, MaskReveal, SectionHeading } from '@/components/motion/prim
 import { stats } from '@/lib/content';
 import { Myphoto } from '@/assets/images';
 
-const PORTRAIT =
-  'https://images.pexels.com/photos/14189629/pexels-photo-14189629.jpeg?auto=compress&cs=tinysrgb&w=900';
-
 function AnimatedStat({
   value,
   suffix,
@@ -107,11 +104,7 @@ export default function About() {
               </MaskReveal>
               <BlurReveal delay={0.15} y={20}>
                 <p className="mt-6 max-w-xl text-base font-light leading-relaxed text-white/50">
-                  For the past six years I&apos;ve been building digital products
-                  that don&apos;t just function — they resonate. I believe the best
-                  interfaces disappear, leaving only the feeling of something
-                  effortless, precise, and alive. My work lives at the intersection
-                  of motion, performance, and design.
+                  I create modern websites and digital experiences that combine clean design, smooth interactions, and practical solutions. I enjoy turning ideas into functional products with a focus on performance, usability, and user experience.
                 </p>
               </BlurReveal>
 

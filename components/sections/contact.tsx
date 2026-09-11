@@ -1,19 +1,21 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { Github, Linkedin, Mail, Send, MessageCircle } from 'lucide-react';
 import Section, { SectionSeparator } from '@/components/motion/section';
 import { BlurReveal, MaskReveal } from '@/components/motion/primitives';
 import MagneticButton from '@/components/motion/magnetic-button';
 
 const socials = [
-  { icon: Mail, label: 'Email', href: 'mailto:hello@rizo.dev' },
-  { icon: Github, label: 'GitHub', href: 'https://github.com' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-  { icon: MessageCircle, label: 'Telegram', href: 'https://t.me' },
+  { icon: Mail, label: 'Email', href: 'mailto:glassd809@gmail.com' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/muhammadesg' },
+  // { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
+  { icon: MessageCircle, label: 'Telegram', href: 'https://t.me/Muhammad_Rizo_SFD' },
 ];
 
 export default function Contact() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   return (
     <>
       <SectionSeparator />
@@ -70,6 +72,7 @@ export default function Contact() {
                     <MagneticButton
                       key={s.label}
                       href={s.href}
+                      target="_blank"
                       variant="ghost"
                       strength={0.5}
                       className="!px-0 !py-0"
@@ -87,7 +90,10 @@ export default function Contact() {
             <div className="flex items-center">
               <BlurReveal y={40} className="w-full">
                 <form
-                  onSubmit={(e) => e.preventDefault()}
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    setIsSubmitted(true);
+                  }}
                   className="glass rounded-2xl p-6 sm:p-8"
                 >
                   <div className="space-y-5">
@@ -121,7 +127,15 @@ export default function Contact() {
                         className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 text-sm text-white placeholder-white/25 outline-none transition-colors duration-300 focus:border-white/30 focus:bg-white/[0.04]"
                       />
                     </div>
-                    <MagneticButton href="#" variant="primary" className="w-full justify-center">
+                    <MagneticButton
+                      href="#"
+                      variant="primary"
+                      className="w-full justify-center"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setIsSubmitted(true);
+                      }}
+                    >
                       <Send className="h-4 w-4" />
                       <span>Send Message</span>
                     </MagneticButton>
@@ -130,6 +144,44 @@ export default function Contact() {
               </BlurReveal>
             </div>
           </div>
+
+          {isSubmitted && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-6 backdrop-blur-sm"
+              onClick={() => setIsSubmitted(false)}
+            >
+              <motion.div
+                initial={{ opacity: 0, y: 20, scale: 0.96 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.3 }}
+                onClick={(e) => e.stopPropagation()}
+                className="glass w-full max-w-md rounded-2xl border border-white/10 p-8 text-center"
+              >
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
+                  <Send className="h-5 w-5 text-white" />
+                </div>
+
+                <h3 className="mt-6 text-2xl font-semibold text-white">
+                  Message received
+                </h3>
+
+                <p className="mt-3 text-sm leading-relaxed text-white/50">
+                  Thanks for reaching out. I&apos;ll get back to you as soon as possible.
+                </p>
+
+                <button
+                  type="button"
+                  onClick={() => setIsSubmitted(false)}
+                  className="mt-7 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-white/90"
+                >
+                  Close
+                </button>
+              </motion.div>
+            </motion.div>
+          )}
 
           {/* Finishing line */}
           <motion.div

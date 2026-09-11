@@ -1,113 +1,111 @@
+import { CraftImg, DsBanner, InfoCom, VatanBanner } from "@/assets/images";
+
 export const projects = [
   {
-    id: 'aurora',
-    name: 'Aurora Finance',
-    category: 'Fintech Platform',
+    id: 'ds-access',
+    name: 'DS Access Group',
+    category: 'Corporate Website',
     description:
-      'A next-generation banking dashboard reimagining how people interact with their money. Real-time analytics, predictive insights, and an interface that makes complex financial data feel effortless.',
-    tech: ['Next.js', 'TypeScript', 'Supabase', 'Framer Motion', 'Tailwind'],
-    role: 'Lead Frontend Developer',
-    year: '2025',
+      'A modern corporate website developed for DS Access Group, presenting industrial solutions and company services through a clean, responsive, and user-friendly interface.',
+    tech: ['React', 'Vite', 'TypeScript', 'Laravel', 'Tailwind'],
+    role: 'Fullstack Developer',
+    year: '2026',
     image:
-      'https://images.pexels.com/photos/27141316/pexels-photo-27141316.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    DsBanner.src,
+    liveDemo: 'https://dsaccessgroup.com',
+    github: 'https://github.com/muhammadesg/dsaccessgroup-frontend',
     accent: 'from-white/20 to-white/0',
   },
   {
-    id: 'monolith',
-    name: 'Monolith Studio',
-    category: 'Creative Agency',
+    id: 'infocom',
+    name: 'InfoCom',
+    category: 'Website',
     description:
-      'An immersive digital portfolio for an award-winning design studio. Built around scroll-driven storytelling, cinematic transitions, and a custom CMS that lets creatives publish without touching code.',
-    tech: ['React', 'GSAP', 'Sanity', 'Vercel', 'Three.js'],
-    role: 'Frontend Architect',
+      'A modern digital platform built for InfoCom, featuring a clean interface, responsive layouts, and intuitive navigation. Developed with a focus on clear information presentation, performance, and a smooth user experience.',
+    tech: ['React', 'Vite', 'TypeScript', 'SCSS', 'Ant Design'],
+    role: 'Frontend Developer',
     year: '2024',
     image:
-      'https://images.pexels.com/photos/27806693/pexels-photo-27806693.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    InfoCom.src,
+    liveDemo: 'https://infocom.uz/en',
+    github: null,
     accent: 'from-white/15 to-white/0',
   },
   {
-    id: 'echo',
-    name: 'Echo OS',
-    category: 'SaaS Product',
+    id: 'vatandoshlar-fondi',
+    name: 'Vatandoshlar Fondi',
+    category: 'Organization Website',
     description:
-      'A complete operating system for remote teams — combining messaging, task management, and documentation into a single, fluid workspace. Designed for speed, built for focus.',
-    tech: ['Next.js', 'tRPC', 'PostgreSQL', 'Redis', 'Stripe'],
-    role: 'Founding Engineer',
-    year: '2024',
+      'A professional website developed for Vatandoshlar Fondi, focused on clear information presentation, modern responsive layouts, and an accessible user experience.',
+    tech: ['React', 'Vite', 'TypeScript', 'AntDesign', 'Laravel/PHP'],
+    role: 'Frontend Developer',
+    year: '2025',
     image:
-      'https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    VatanBanner.src,
+    liveDemo: 'https://vatandoshlar.uz/en',
+    github: null,
     accent: 'from-white/20 to-white/0',
   },
   {
-    id: 'lumen',
-    name: 'Lumen Commerce',
-    category: 'E-Commerce',
+    id: 'craftbazar',
+    name: 'CraftBazar',
+    category: 'Minecraft Marketplace',
     description:
-      'A luxury commerce experience for a high-end fashion house. Every product page is a story, every checkout a ceremony. Built to convert without ever feeling like a store.',
-    tech: ['Next.js', 'Shopify', 'TypeScript', 'Tailwind', 'Framer Motion'],
+      'A digital marketplace built for the Minecraft community, offering a simple and engaging platform to discover, browse, and purchase Minecraft-related products and content.',
+    tech: ['React', 'Vite', 'TypeScript', 'SCSS',],
     role: 'Frontend Developer',
-    year: '2023',
+    year: '2026',
     image:
-      'https://images.pexels.com/photos/37253404/pexels-photo-37253404.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    CraftImg.src,
+    liveDemo: 'https://craftbazar.uz/',
+    github: null,
     accent: 'from-white/15 to-white/0',
   },
 ];
 
 export const experiences = [
   {
-    company: 'Nebula Labs',
-    position: 'Lead Frontend Developer',
-    period: '2024 — Present',
-    location: 'Remote',
-    description:
-      'Leading the frontend architecture for a suite of AI-powered creative tools used by over 40,000 designers worldwide.',
-    tech: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind'],
-    achievements: [
-      'Reduced initial load time by 62% through code-splitting and streaming SSR',
-      'Built a design system adopted across 6 internal products',
-      'Mentored a team of 4 frontend engineers',
-    ],
-  },
-  {
-    company: 'Vertex Digital',
-    position: 'Senior Frontend Developer',
-    period: '2022 — 2024',
-    location: 'Tashkent, UZ',
-    description:
-      'Crafted award-winning marketing sites and product interfaces for global brands including two Fortune 500 companies.',
-    tech: ['React', 'GSAP', 'Sanity', 'Vercel'],
-    achievements: [
-      'Delivered 14 production websites with a 98+ Lighthouse score',
-      'Won an Awwwards Honorable Mention for interactive storytelling',
-      'Established the studio’s motion design language',
-    ],
-  },
-  {
-    company: 'Cobalt Studio',
+    company: 'Napa Team',
     position: 'Frontend Developer',
-    period: '2020 — 2022',
+    period: '2026 — Present',
     location: 'Tashkent, UZ',
     description:
-      'Built and maintained e-commerce experiences for emerging fashion and lifestyle brands across Central Asia.',
-    tech: ['React', 'Shopify', 'Node.js', 'SCSS'],
+      'Working on a variety of web projects, contributing to frontend development, responsive interfaces, and the implementation of modern web experiences.',
+    tech: ['React', 'TypeScript', 'Vite', 'SCSS', 'Ant Design', 'Laravel'],
     achievements: [
-      'Launched 20+ storefronts generating $2M+ in annual revenue',
-      'Introduced component-driven development to the team',
-      'Cut average build time in half with a reusable UI library',
+      'Worked on projects including CraftBazar, Jamg’arma, and other client projects',
+      'Developed responsive interfaces and reusable frontend components',
+      'Collaborated with the team to implement new features and improve existing products',
     ],
   },
+
   {
-    company: 'Freelance',
-    position: 'Independent Developer',
-    period: '2019 — 2020',
-    location: 'Worldwide',
+    company: 'Napa Team / Mio Beauty',
+    position: 'Frontend Developer',
+    period: '2025 — 2026',
+    location: 'Tashkent, UZ',
     description:
-      'Worked with startups and individuals to bring their digital products to life — from landing pages to full-stack applications.',
-    tech: ['React', 'Next.js', 'Firebase', 'Tailwind'],
+      'Contributed to commercial web projects, including the Mio Beauty platform and the Vatandoshlar Fondi website.',
+    tech: ['React', 'TypeScript', 'Vite', 'Next.js', 'Ant Design', 'Laravel'],
     achievements: [
-      'Completed 30+ client projects with 100% satisfaction',
-      'Specialized in high-conversion landing pages',
-      'Began building a reputation for cinematic web experiences',
+      'Developed interfaces for the Mio Beauty administration panel',
+      'Implemented features for managing customer conversations and orders',
+      'Contributed to the frontend development of the Vatandoshlar Fondi website',
+    ],
+  },
+
+  {
+    company: 'Napa Team',
+    position: 'Frontend Developer',
+    period: '2024 — 2025',
+    location: 'Tashkent, UZ',
+    description:
+      'Worked on real-world web development projects for organizations and businesses, focusing primarily on frontend development and user interfaces.',
+    tech: ['React', 'TypeScript', 'Vite', 'SCSS', 'Ant Design'],
+    achievements: [
+      'Worked on projects including InfoCom and E-Protocol',
+      'Built responsive pages and reusable UI components',
+      'Integrated frontend interfaces with APIs and backend services',
     ],
   },
 ];
@@ -115,27 +113,60 @@ export const experiences = [
 export const techStack = [
   {
     category: 'Frontend',
-    items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'GSAP'],
+    items: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'JavaScript',
+      'Vite',
+      'Ant Design',
+      'Framer Motion',
+      'React Query',
+    ],
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'tRPC', 'Express', 'Edge Functions', 'Webhooks'],
+    items: [
+      'Laravel',
+      'Node.js',
+      'Livewire',
+      'REST APIs',
+    ],
   },
   {
     category: 'Database',
-    items: ['Supabase', 'PostgreSQL', 'Prisma', 'Redis'],
+    items: [
+      'MySQL',
+      'PostgreSQL',
+    ],
   },
   {
     category: 'Cloud',
-    items: ['Vercel', 'Netlify', 'Cloudflare', 'AWS'],
+    items: [
+      'Vercel',
+      'Netlify',
+      'Railway',
+    ],
   },
   {
     category: 'Tools',
-    items: ['Git', 'Figma', 'Linear', 'Cursor', 'pnpm'],
+    items: [
+      'Codex',
+      'GitHub',
+      'Figma',
+      'Cursor',
+      'VS Code',
+      'Bolt.ai',
+    ],
   },
   {
     category: 'Design',
-    items: ['Figma', 'Spline', 'After Effects', 'Design Systems'],
+    items: [
+      'Figma',
+      'UI/UX Design',
+      'Responsive Design',
+      'Design Systems',
+    ],
   },
 ];
 
@@ -179,18 +210,33 @@ export const processSteps = [
 ];
 
 export const achievements = [
-  { label: 'Years of experience', value: 6, suffix: '+' },
-  { label: 'Projects completed', value: 50, suffix: '+' },
-  { label: 'Technologies used', value: 24, suffix: '+' },
-  { label: 'Clients & companies', value: 30, suffix: '+' },
+  { label: 'Years of experience', value: 3, suffix: '+' },
+  { label: 'Projects completed', value: 14, suffix: '+' },
+  { label: 'Technologies used', value: 20, suffix: '+' },
+  { label: 'Clients & companies', value: 10, suffix: '+' },
 ];
 
 export const awards = [
-  { title: 'Awwwards Honorable Mention', org: 'Awwwards', year: '2024' },
-  { title: 'Frontend Developer Certificate', org: 'Meta', year: '2023' },
-  { title: 'Production Website of the Day', org: 'CSS Design Awards', year: '2024' },
-  { title: 'Open Source Contributor', org: 'GitHub', year: '2023' },
-  { title: 'BSc Computer Science', org: 'Tashkent IT University', year: '2020' },
+  {
+    title: 'Napa Team Certificate',
+    org: 'Napa Team',
+    year: '2026',
+  },
+  {
+    title: 'InfoCom Certificate',
+    org: 'InfoCom',
+    year: '2024',
+  },
+  {
+    title: 'Web Development Certificate',
+    org: 'IT Step Academy',
+    year: '2021',
+  },
+  {
+    title: 'React Development Certificate',
+    org: 'IT School',
+    year: '2024',
+  },
 ];
 
 export const testimonials = [

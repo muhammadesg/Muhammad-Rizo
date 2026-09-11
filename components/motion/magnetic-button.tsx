@@ -9,13 +9,17 @@ export default function MagneticButton({
   href,
   variant = 'primary',
   className = '',
+  target = "_blank",
+  onClick,
   strength = 0.35,
 }: {
   children: ReactNode;
   href: string;
   variant?: 'primary' | 'ghost';
+  target?: string;
   className?: string;
   strength?: number;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }) {
   const ref = useRef<HTMLAnchorElement>(null);
   const x = useMotionValue(0);
@@ -47,8 +51,10 @@ export default function MagneticButton({
     <motion.a
       ref={ref}
       href={href}
+      target='_blank'
       onMouseMove={onMove}
       onMouseLeave={reset}
+      onClick={onClick}
       style={{ x: sx, y: sy }}
       whileTap={{ scale: 0.97 }}
       className={`${base} ${styles} ${className}`}

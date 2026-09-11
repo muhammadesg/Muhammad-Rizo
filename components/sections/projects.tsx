@@ -58,7 +58,7 @@ function ProjectShowcase({
           >
             <motion.div style={{ y: imgY }} className="absolute inset-[-6%]">
               <div
-                className="h-full w-full bg-cover bg-center"
+                className="h-full w-full bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${project.image})` }}
               />
             </motion.div>
@@ -116,27 +116,32 @@ function ProjectShowcase({
         <BlurReveal delay={0.34} y={16}>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="#"
+              href={project.liveDemo}
+              target="_blank"
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:shadow-[0_0_40px_-8px_rgba(255,255,255,0.5)]"
             >
               <span className="relative z-10">Live Demo</span>
               <ArrowUpRight className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
             </a>
-            <a
-              href="#"
-              className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-medium text-white/85 backdrop-blur-md transition-all duration-300 hover:border-white/30 hover:bg-white/[0.07]"
-            >
-              <Github className="h-4 w-4" />
-              <span>GitHub</span>
-            </a>
-            <a
-              href="#"
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-medium text-white/85 backdrop-blur-md transition-all duration-300 hover:border-white/30 hover:bg-white/[0.07]"
+              >
+                <Github className="h-4 w-4" />
+                <span>GitHub</span>
+              </a>
+            )}
+            {/* <a
+              href={project.caseStudy}
               className="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-medium text-white/85 backdrop-blur-md transition-all duration-300 hover:border-white/30 hover:bg-white/[0.07]"
             >
               <span>Case Study</span>
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+            </a> */}
           </div>
         </BlurReveal>
       </div>
