@@ -1,7 +1,7 @@
-import Myphoto from "./photo-1.png"
-import DsBanner from "./dsaccess-img.png"
-import InfoCom from "./infocom-img.png"
-import VatanBanner from "./vatandoshlar-img.png"
-import CraftImg from "./craft-img.png"
+import Myphoto from "./photo-1.webp"
+import DsBanner from "./dsaccess-img.webp"
+import InfoCom from "./infocom-img.webp"
+import VatanBanner from "./vatandoshlar-img.webp"
+import CraftImg from "./craft-img.webp"
 
 export { Myphoto, DsBanner, InfoCom, VatanBanner, CraftImg}
